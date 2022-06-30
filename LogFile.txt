@@ -1,0 +1,337 @@
+26 Jun 2022 13:47:46  INFO logger - Scenario failed and screenshot saved in outputFiles folder
+26 Jun 2022 13:47:46  INFO logger - Shutting down driver
+----------------------------------------------
+26 Jun 2022 13:47:48  INFO logger - Scenario failed and screenshot saved in outputFiles folder
+26 Jun 2022 13:47:48  INFO logger - Shutting down driver
+----------------------------------------------
+26 Jun 2022 14:07:35  INFO logger - Scenario failed and screenshot saved in outputFiles folder
+26 Jun 2022 14:07:35  INFO logger - Shutting down driver
+----------------------------------------------
+26 Jun 2022 14:07:37  INFO logger - Scenario failed and screenshot saved in outputFiles folder
+26 Jun 2022 14:07:37  INFO logger - Shutting down driver
+----------------------------------------------
+26 Jun 2022 20:29:51  INFO logger - Scenario failed and screenshot saved in outputFiles folder
+26 Jun 2022 20:29:51  INFO logger - Shutting down driver
+----------------------------------------------
+26 Jun 2022 20:29:53  INFO logger - Scenario failed and screenshot saved in outputFiles folder
+26 Jun 2022 20:29:53  INFO logger - Shutting down driver
+----------------------------------------------
+27 Jun 2022 18:46:27  INFO logger - Scenario failed and screenshot saved in outputFiles folder
+27 Jun 2022 18:46:27  INFO logger - Shutting down driver
+----------------------------------------------
+27 Jun 2022 18:46:29  INFO logger - Scenario failed and screenshot saved in outputFiles folder
+27 Jun 2022 18:46:29  INFO logger - Shutting down driver
+----------------------------------------------
+27 Jun 2022 18:52:01  INFO logger - Scenario failed and screenshot saved in outputFiles folder
+27 Jun 2022 18:52:01  INFO logger - Shutting down driver
+----------------------------------------------
+27 Jun 2022 18:52:03  INFO logger - Scenario failed and screenshot saved in outputFiles folder
+27 Jun 2022 18:52:03  INFO logger - Shutting down driver
+----------------------------------------------
+27 Jun 2022 19:06:30  INFO logger - .
+27 Jun 2022 19:06:30  INFO logger - Google page loaded successfully
+27 Jun 2022 19:06:30  INFO logger - .
+27 Jun 2022 19:06:30  INFO logger - Google page loaded successfully
+27 Jun 2022 19:06:33  INFO logger - .
+27 Jun 2022 19:06:33  INFO logger - selenium bdd framework - Google Search page loaded successfully
+27 Jun 2022 19:07:19  INFO logger - Scenario failed and screenshot saved in outputFiles folder
+27 Jun 2022 19:07:19  INFO logger - Shutting down driver
+----------------------------------------------
+27 Jun 2022 19:07:22  INFO logger - .
+27 Jun 2022 19:07:22  INFO logger - Google page loaded successfully
+27 Jun 2022 19:07:22  INFO logger - .
+27 Jun 2022 19:07:22  INFO logger - Google page loaded successfully
+27 Jun 2022 19:07:24  INFO logger - .
+27 Jun 2022 19:07:24  INFO logger - Google Images page loaded successfully
+27 Jun 2022 19:08:11  INFO logger - Scenario failed and screenshot saved in outputFiles folder
+27 Jun 2022 19:08:11  INFO logger - Shutting down driver
+----------------------------------------------
+27 Jun 2022 19:48:03  INFO logger - Scenario failed and screenshot saved in outputFiles folder
+27 Jun 2022 19:48:03  INFO logger - Shutting down driver
+----------------------------------------------
+27 Jun 2022 19:48:05  INFO logger - Scenario failed and screenshot saved in outputFiles folder
+27 Jun 2022 19:48:05  INFO logger - Shutting down driver
+----------------------------------------------
+27 Jun 2022 19:51:17  INFO logger - .
+27 Jun 2022 19:51:17  INFO logger - Google page loaded successfully
+27 Jun 2022 19:51:17  INFO logger - .
+27 Jun 2022 19:51:17  INFO logger - Google page loaded successfully
+27 Jun 2022 19:51:20  INFO logger - .
+27 Jun 2022 19:51:20  INFO logger - selenium bdd framework - Google Search page loaded successfully
+27 Jun 2022 19:52:06  INFO logger - Scenario failed and screenshot saved in outputFiles folder
+27 Jun 2022 19:52:06  INFO logger - Shutting down driver
+----------------------------------------------
+27 Jun 2022 19:52:09  INFO logger - .
+27 Jun 2022 19:52:09  INFO logger - Google page loaded successfully
+27 Jun 2022 19:52:09  INFO logger - .
+27 Jun 2022 19:52:09  INFO logger - Google page loaded successfully
+27 Jun 2022 19:52:13  INFO logger - .
+27 Jun 2022 19:52:13  INFO logger - suitsupply - Google Search page loaded successfully
+27 Jun 2022 19:52:59  INFO logger - Scenario failed and screenshot saved in outputFiles folder
+27 Jun 2022 19:52:59  INFO logger - Shutting down driver
+----------------------------------------------
+28 Jun 2022 19:44:55  INFO logger - Scenario failed and screenshot saved in outputFiles folder
+28 Jun 2022 19:44:55  INFO logger - Shutting down driver
+----------------------------------------------
+28 Jun 2022 19:47:07  INFO logger - Scenario failed and screenshot saved in outputFiles folder
+28 Jun 2022 19:47:07  INFO logger - Shutting down driver
+----------------------------------------------
+28 Jun 2022 19:48:56  INFO logger - Scenario failed and screenshot saved in outputFiles folder
+28 Jun 2022 19:48:56  INFO logger - Shutting down driver
+----------------------------------------------
+28 Jun 2022 20:34:06  INFO logger - Scenario failed and screenshot saved in outputFiles folder
+28 Jun 2022 20:34:06  INFO logger - Shutting down driver
+----------------------------------------------
+28 Jun 2022 20:41:39  INFO logger - Scenario failed and screenshot saved in outputFiles folder
+28 Jun 2022 20:41:39  INFO logger - Shutting down driver
+----------------------------------------------
+28 Jun 2022 20:43:23  INFO logger - Scenario failed and screenshot saved in outputFiles folder
+28 Jun 2022 20:43:23  INFO logger - Shutting down driver
+----------------------------------------------
+28 Jun 2022 20:44:18  INFO logger - Scenario failed and screenshot saved in outputFiles folder
+28 Jun 2022 20:44:18  INFO logger - Shutting down driver
+----------------------------------------------
+28 Jun 2022 20:45:50  INFO logger - Scenario failed and screenshot saved in outputFiles folder
+28 Jun 2022 20:45:50  INFO logger - Shutting down driver
+----------------------------------------------
+28 Jun 2022 20:46:36  INFO logger - Scenario failed and screenshot saved in outputFiles folder
+28 Jun 2022 20:46:36  INFO logger - Shutting down driver
+----------------------------------------------
+29 Jun 2022 21:12:32  INFO logger - Scenario failed and screenshot saved in outputFiles folder
+29 Jun 2022 21:12:32  INFO logger - Shutting down driver
+----------------------------------------------
+29 Jun 2022 21:17:32  INFO logger - Scenario failed and screenshot saved in outputFiles folder
+29 Jun 2022 21:17:32  INFO logger - Shutting down driver
+----------------------------------------------
+29 Jun 2022 21:18:32  INFO logger - Scenario failed and screenshot saved in outputFiles folder
+29 Jun 2022 21:18:32  INFO logger - Shutting down driver
+----------------------------------------------
+29 Jun 2022 21:34:21  INFO logger - Scenario failed and screenshot saved in outputFiles folder
+29 Jun 2022 21:34:21  INFO logger - Shutting down driver
+----------------------------------------------
+29 Jun 2022 21:53:13  INFO logger - Scenario failed and screenshot saved in outputFiles folder
+29 Jun 2022 21:53:13  INFO logger - Shutting down driver
+----------------------------------------------
+29 Jun 2022 21:54:51  INFO logger - Scenario failed and screenshot saved in outputFiles folder
+29 Jun 2022 21:54:51  INFO logger - Shutting down driver
+----------------------------------------------
+29 Jun 2022 21:57:16  INFO logger - Scenario failed and screenshot saved in outputFiles folder
+29 Jun 2022 21:57:16  INFO logger - Shutting down driver
+----------------------------------------------
+29 Jun 2022 22:01:07  INFO logger - Shutting down driver
+----------------------------------------------
+29 Jun 2022 22:04:29  INFO logger - Shutting down driver
+----------------------------------------------
+29 Jun 2022 22:15:42  INFO logger - Shutting down driver
+----------------------------------------------
+29 Jun 2022 22:16:37  INFO logger - .
+29 Jun 2022 22:16:37  INFO logger - Home Page page loaded successfully
+29 Jun 2022 22:16:39  INFO logger - Shutting down driver
+----------------------------------------------
+29 Jun 2022 22:18:01  INFO logger - .
+29 Jun 2022 22:18:01  INFO logger - Home Page page loaded successfully
+29 Jun 2022 22:18:03  INFO logger - Shutting down driver
+----------------------------------------------
+29 Jun 2022 22:19:02  INFO logger - .
+29 Jun 2022 22:19:02  INFO logger - Home Page page loaded successfully
+29 Jun 2022 22:19:02  INFO logger - .
+29 Jun 2022 22:19:02  INFO logger - Home Page1 page loaded successfully
+29 Jun 2022 22:19:02  INFO logger - .
+29 Jun 2022 22:19:02  INFO logger - Home Page2 page loaded successfully
+29 Jun 2022 22:19:04  INFO logger - .
+29 Jun 2022 22:19:04  INFO logger - Home Page3 page loaded successfully
+29 Jun 2022 22:19:04  INFO logger - Shutting down driver
+----------------------------------------------
+29 Jun 2022 22:20:02  INFO logger - .
+29 Jun 2022 22:20:02  INFO logger - Home Page page loaded successfully
+29 Jun 2022 22:20:02  INFO logger - .
+29 Jun 2022 22:20:02  INFO logger - Home Page1 page loaded successfully
+29 Jun 2022 22:20:02  INFO logger - .
+29 Jun 2022 22:20:02  INFO logger - Home Page2 page loaded successfully
+29 Jun 2022 22:20:04  INFO logger - .
+29 Jun 2022 22:20:04  INFO logger - Home Page3 page loaded successfully
+29 Jun 2022 22:23:43  INFO logger - Shutting down driver
+----------------------------------------------
+29 Jun 2022 22:23:53  INFO logger - .
+29 Jun 2022 22:23:53  INFO logger - Home Page page loaded successfully
+29 Jun 2022 22:23:53  INFO logger - .
+29 Jun 2022 22:23:53  INFO logger - Home Page1 page loaded successfully
+29 Jun 2022 22:23:53  INFO logger - .
+29 Jun 2022 22:23:53  INFO logger - Home Page2 page loaded successfully
+29 Jun 2022 22:23:54  INFO logger - .
+29 Jun 2022 22:23:54  INFO logger - Home Page3 page loaded successfully
+29 Jun 2022 22:26:36  INFO logger - Shutting down driver
+----------------------------------------------
+29 Jun 2022 22:26:46  INFO logger - .
+29 Jun 2022 22:26:46  INFO logger - Home Page page loaded successfully
+29 Jun 2022 22:26:46  INFO logger - .
+29 Jun 2022 22:26:46  INFO logger - Home Page1 page loaded successfully
+29 Jun 2022 22:26:46  INFO logger - .
+29 Jun 2022 22:26:46  INFO logger - Home Page2 page loaded successfully
+29 Jun 2022 22:26:47  INFO logger - .
+29 Jun 2022 22:26:47  INFO logger - Home Page3 page loaded successfully
+29 Jun 2022 22:35:22  INFO logger - Shutting down driver
+----------------------------------------------
+29 Jun 2022 22:41:32  INFO logger - .
+29 Jun 2022 22:41:32  INFO logger - Home Page page loaded successfully
+29 Jun 2022 22:41:32  INFO logger - .
+29 Jun 2022 22:41:32  INFO logger - Home Page1 page loaded successfully
+29 Jun 2022 22:41:32  INFO logger - .
+29 Jun 2022 22:41:32  INFO logger - Home Page2 page loaded successfully
+29 Jun 2022 22:41:34  INFO logger - .
+29 Jun 2022 22:41:34  INFO logger - Home Page3 page loaded successfully
+29 Jun 2022 22:42:03  INFO logger - Shutting down driver
+----------------------------------------------
+29 Jun 2022 22:49:07  INFO logger - .
+29 Jun 2022 22:49:07  INFO logger - Home Page page loaded successfully
+29 Jun 2022 22:49:07  INFO logger - .
+29 Jun 2022 22:49:07  INFO logger - Home Page1 page loaded successfully
+29 Jun 2022 22:49:07  INFO logger - .
+29 Jun 2022 22:49:07  INFO logger - Home Page2 page loaded successfully
+29 Jun 2022 22:49:09  INFO logger - .
+29 Jun 2022 22:49:09  INFO logger - Home Page3 page loaded successfully
+29 Jun 2022 22:49:16  INFO logger - Scenario failed and screenshot saved in outputFiles folder
+29 Jun 2022 22:49:16  INFO logger - Shutting down driver
+----------------------------------------------
+29 Jun 2022 22:50:33  INFO logger - .
+29 Jun 2022 22:50:33  INFO logger - Home Page page loaded successfully
+29 Jun 2022 22:50:33  INFO logger - .
+29 Jun 2022 22:50:33  INFO logger - Home Page1 page loaded successfully
+29 Jun 2022 22:50:33  INFO logger - .
+29 Jun 2022 22:50:33  INFO logger - Home Page2 page loaded successfully
+29 Jun 2022 22:50:35  INFO logger - .
+29 Jun 2022 22:50:35  INFO logger - Home Page3 page loaded successfully
+29 Jun 2022 22:51:05  INFO logger - Shutting down driver
+----------------------------------------------
+29 Jun 2022 22:53:32  INFO logger - .
+29 Jun 2022 22:53:32  INFO logger - Home Page page loaded successfully
+29 Jun 2022 22:53:32  INFO logger - .
+29 Jun 2022 22:53:32  INFO logger - Home Page1 page loaded successfully
+29 Jun 2022 22:53:32  INFO logger - .
+29 Jun 2022 22:53:32  INFO logger - Home Page2 page loaded successfully
+29 Jun 2022 22:53:33  INFO logger - .
+29 Jun 2022 22:53:33  INFO logger - Home Page3 page loaded successfully
+29 Jun 2022 22:55:48  INFO logger - Shutting down driver
+----------------------------------------------
+29 Jun 2022 22:56:01  INFO logger - .
+29 Jun 2022 22:56:01  INFO logger - Home Page page loaded successfully
+29 Jun 2022 22:56:01  INFO logger - .
+29 Jun 2022 22:56:01  INFO logger - Home Page1 page loaded successfully
+29 Jun 2022 22:56:01  INFO logger - .
+29 Jun 2022 22:56:01  INFO logger - Home Page2 page loaded successfully
+29 Jun 2022 22:56:03  INFO logger - .
+29 Jun 2022 22:56:03  INFO logger - Home Page3 page loaded successfully
+29 Jun 2022 22:56:05  INFO logger - .
+29 Jun 2022 22:56:05  INFO logger - Home Page 4 page loaded successfully
+29 Jun 2022 23:10:41  INFO logger - Shutting down driver
+----------------------------------------------
+29 Jun 2022 23:10:52  INFO logger - .
+29 Jun 2022 23:10:52  INFO logger - Home Page page loaded successfully
+29 Jun 2022 23:10:52  INFO logger - .
+29 Jun 2022 23:10:52  INFO logger - Home Page1 page loaded successfully
+29 Jun 2022 23:10:52  INFO logger - .
+29 Jun 2022 23:10:52  INFO logger - Home Page2 page loaded successfully
+29 Jun 2022 23:10:54  INFO logger - .
+29 Jun 2022 23:10:54  INFO logger - Home Page3 page loaded successfully
+29 Jun 2022 23:10:57  INFO logger - .
+29 Jun 2022 23:10:57  INFO logger - Home Page 4 page loaded successfully
+29 Jun 2022 23:10:58  INFO logger - Scenario failed and screenshot saved in outputFiles folder
+29 Jun 2022 23:10:58  INFO logger - Shutting down driver
+----------------------------------------------
+29 Jun 2022 23:12:03  INFO logger - .
+29 Jun 2022 23:12:03  INFO logger - Home Page page loaded successfully
+29 Jun 2022 23:12:03  INFO logger - .
+29 Jun 2022 23:12:03  INFO logger - Home Page1 page loaded successfully
+29 Jun 2022 23:12:04  INFO logger - .
+29 Jun 2022 23:12:04  INFO logger - Home Page2 page loaded successfully
+29 Jun 2022 23:12:06  INFO logger - .
+29 Jun 2022 23:12:06  INFO logger - Home Page3 page loaded successfully
+29 Jun 2022 23:12:09  INFO logger - .
+29 Jun 2022 23:12:09  INFO logger - Home Page 4 page loaded successfully
+29 Jun 2022 23:14:08  INFO logger - Shutting down driver
+----------------------------------------------
+29 Jun 2022 23:24:24  INFO logger - .
+29 Jun 2022 23:24:24  INFO logger - Home Page page loaded successfully
+29 Jun 2022 23:24:24  INFO logger - .
+29 Jun 2022 23:24:24  INFO logger - Home Page1 page loaded successfully
+29 Jun 2022 23:24:25  INFO logger - .
+29 Jun 2022 23:24:25  INFO logger - Home Page2 page loaded successfully
+29 Jun 2022 23:24:27  INFO logger - .
+29 Jun 2022 23:24:27  INFO logger - Home Page3 page loaded successfully
+29 Jun 2022 23:24:35  INFO logger - .
+29 Jun 2022 23:24:35  INFO logger - Home Page 4 page loaded successfully
+29 Jun 2022 23:24:35  INFO logger - Scenario failed and screenshot saved in outputFiles folder
+29 Jun 2022 23:24:35  INFO logger - Shutting down driver
+----------------------------------------------
+29 Jun 2022 23:42:14  INFO logger - .
+29 Jun 2022 23:42:14  INFO logger - Home Page page loaded successfully
+29 Jun 2022 23:42:14  INFO logger - .
+29 Jun 2022 23:42:14  INFO logger - Home Page1 page loaded successfully
+29 Jun 2022 23:42:14  INFO logger - .
+29 Jun 2022 23:42:14  INFO logger - Home Page2 page loaded successfully
+29 Jun 2022 23:42:17  INFO logger - .
+29 Jun 2022 23:42:17  INFO logger - Home Page3 page loaded successfully
+29 Jun 2022 23:42:20  INFO logger - .
+29 Jun 2022 23:42:20  INFO logger - Home Page 4 page loaded successfully
+29 Jun 2022 23:42:56  INFO logger - Shutting down driver
+----------------------------------------------
+29 Jun 2022 23:43:31  INFO logger - .
+29 Jun 2022 23:43:31  INFO logger - Home Page page loaded successfully
+29 Jun 2022 23:43:31  INFO logger - .
+29 Jun 2022 23:43:31  INFO logger - Home Page1 page loaded successfully
+29 Jun 2022 23:43:31  INFO logger - .
+29 Jun 2022 23:43:31  INFO logger - Home Page2 page loaded successfully
+29 Jun 2022 23:43:33  INFO logger - .
+29 Jun 2022 23:43:33  INFO logger - Home Page3 page loaded successfully
+29 Jun 2022 23:43:36  INFO logger - .
+29 Jun 2022 23:43:36  INFO logger - Home Page 4 page loaded successfully
+29 Jun 2022 23:44:30  INFO logger - Shutting down driver
+----------------------------------------------
+29 Jun 2022 23:44:39  INFO logger - .
+29 Jun 2022 23:44:39  INFO logger - Home Page page loaded successfully
+29 Jun 2022 23:44:39  INFO logger - .
+29 Jun 2022 23:44:39  INFO logger - Home Page1 page loaded successfully
+29 Jun 2022 23:44:40  INFO logger - .
+29 Jun 2022 23:44:40  INFO logger - Home Page2 page loaded successfully
+29 Jun 2022 23:44:42  INFO logger - .
+29 Jun 2022 23:44:42  INFO logger - Home Page3 page loaded successfully
+29 Jun 2022 23:44:44  INFO logger - .
+29 Jun 2022 23:44:44  INFO logger - Home Page 4 page loaded successfully
+29 Jun 2022 23:45:21  INFO logger - Shutting down driver
+----------------------------------------------
+29 Jun 2022 23:45:39  INFO logger - .
+29 Jun 2022 23:45:39  INFO logger - Home Page page loaded successfully
+29 Jun 2022 23:45:39  INFO logger - .
+29 Jun 2022 23:45:39  INFO logger - Home Page1 page loaded successfully
+29 Jun 2022 23:45:39  INFO logger - .
+29 Jun 2022 23:45:39  INFO logger - Home Page2 page loaded successfully
+29 Jun 2022 23:45:41  INFO logger - .
+29 Jun 2022 23:45:41  INFO logger - Home Page3 page loaded successfully
+29 Jun 2022 23:45:44  INFO logger - .
+29 Jun 2022 23:45:44  INFO logger - Home Page 4 page loaded successfully
+29 Jun 2022 23:46:21  INFO logger - Shutting down driver
+----------------------------------------------
+29 Jun 2022 23:52:45  INFO logger - .
+29 Jun 2022 23:52:45  INFO logger - Home Page page loaded successfully
+29 Jun 2022 23:52:45  INFO logger - .
+29 Jun 2022 23:52:45  INFO logger - Home Page1 page loaded successfully
+29 Jun 2022 23:52:45  INFO logger - .
+29 Jun 2022 23:52:45  INFO logger - Home Page2 page loaded successfully
+29 Jun 2022 23:52:46  INFO logger - .
+29 Jun 2022 23:52:46  INFO logger - Home Page3 page loaded successfully
+29 Jun 2022 23:52:49  INFO logger - .
+29 Jun 2022 23:52:49  INFO logger - Home Page 4 page loaded successfully
+29 Jun 2022 23:53:28  INFO logger - Shutting down driver
+----------------------------------------------
+29 Jun 2022 23:53:48  INFO logger - .
+29 Jun 2022 23:53:48  INFO logger - Home Page page loaded successfully
+29 Jun 2022 23:53:48  INFO logger - .
+29 Jun 2022 23:53:48  INFO logger - Home Page1 page loaded successfully
+29 Jun 2022 23:53:48  INFO logger - .
+29 Jun 2022 23:53:48  INFO logger - Home Page2 page loaded successfully
+29 Jun 2022 23:53:49  INFO logger - .
+29 Jun 2022 23:53:49  INFO logger - Home Page3 page loaded successfully
+29 Jun 2022 23:53:57  INFO logger - .
+29 Jun 2022 23:53:57  INFO logger - Home Page 4 page loaded successfully
+29 Jun 2022 23:54:33  INFO logger - Shutting down driver
+----------------------------------------------
