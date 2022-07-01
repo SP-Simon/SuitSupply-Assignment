@@ -12,6 +12,7 @@
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<cucumber.version>7.4.1</cucumber.version>
 	</properties>
 	<dependencies>
 
@@ -22,13 +23,17 @@
 			<version>4.5.13</version>
 		</dependency>
 
-
-
 		<dependency>
-			<groupId>com.codeborne</groupId>
-			<artifactId>phantomjsdriver</artifactId>
-			<version>1.3.0</version>
+			<groupId>com.aventstack</groupId>
+			<artifactId>extentreports</artifactId>
+			<version>5.0.9</version>
 		</dependency>
+		<dependency>
+			<groupId>tech.grasshopper</groupId>
+			<artifactId>extentreports-cucumber7-adapter</artifactId>
+			<version>1.7.0</version>
+		</dependency>
+
 
 
 		<dependency>
@@ -49,22 +54,35 @@
 		</dependency>
 
 		<dependency>
-			<groupId>info.cukes</groupId>
+			<groupId>io.cucumber</groupId>
 			<artifactId>cucumber-java</artifactId>
-			<version>1.2.4</version>
-			<scope>test</scope>
+			<version>${cucumber.version}</version>
 		</dependency>
 		<dependency>
-			<groupId>info.cukes</groupId>
+			<groupId>io.cucumber</groupId>
 			<artifactId>cucumber-junit</artifactId>
-			<version>1.2.4</version>
-			<scope>test</scope>
+			<version>${cucumber.version}</version>
 		</dependency>
 		<dependency>
-			<groupId>info.cukes</groupId>
+			<groupId>io.cucumber</groupId>
 			<artifactId>cucumber-picocontainer</artifactId>
-			<version>1.2.4</version>
-			<scope>test</scope>
+			<version>${cucumber.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>io.cucumber</groupId>
+			<artifactId>cucumber-testng</artifactId>
+			<version>${cucumber.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>commons-io</groupId>
+			<artifactId>commons-io</artifactId>
+			<version>2.11.0</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.testng</groupId>
+			<artifactId>testng</artifactId>
+			<version>7.6.0</version>
 		</dependency>
 
 		<dependency>
@@ -72,18 +90,6 @@
 			<artifactId>webdrivermanager</artifactId>
 			<version>4.2.2</version>
 			<scope>test</scope>
-		</dependency>
-
-
-		<dependency>
-			<groupId>info.cukes</groupId>
-			<artifactId>cucumber-testng</artifactId>
-			<version>1.2.2</version>
-		</dependency>
-		<dependency>
-			<groupId>org.testng</groupId>
-			<artifactId>testng</artifactId>
-			<version>6.9.9</version>
 		</dependency>
 	</dependencies>
 
@@ -106,20 +112,6 @@
 				<configuration>
 					<source>1.8</source>
 					<target>1.8</target>
-
-					<systemPropertyVariables>
-						<property>
-							<name>browser</name>
-							<value>${browser}</value>
-						</property>
-					</systemPropertyVariables>
-
-					<systemPropertyVariables>
-						<property>
-							<name>headless</name>
-							<value>${headless}</value>
-						</property>
-					</systemPropertyVariables>
 				</configuration>
 			</plugin>
 			<plugin>

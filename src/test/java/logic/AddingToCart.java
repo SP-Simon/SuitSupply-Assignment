@@ -1,9 +1,9 @@
 package logic;
 
-import cucumber.api.java.en.And;
-import cucumber.api.java.en.Given;
-import cucumber.api.java.en.Then;
 import framework.CreateSession;
+import io.cucumber.java.en.And;
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
 import org.openqa.selenium.*;
 import pages.FabricPage;
 
@@ -15,20 +15,20 @@ public class AddingToCart {
     WebElement nextButton;
 
 
-    public AddingToCart(){
+    public AddingToCart() {
         driver = CreateSession.getWebDriver();
         fabricPage = new FabricPage(driver);
-        }
-
-    public SearchContext initializeShadowRoot(){
-
-        WebElement cmtmroot = driver.findElement(By.tagName("cmtm-root"));
-        JavascriptExecutor jse = (JavascriptExecutor)driver;
-        SearchContext element = cmtmroot.getShadowRoot();
-        return  element;
     }
 
-   //Launch the application
+    public SearchContext initializeShadowRoot() {
+
+        WebElement cmtmroot = driver.findElement(By.tagName("cmtm-root"));
+        JavascriptExecutor jse = (JavascriptExecutor) driver;
+        SearchContext element = cmtmroot.getShadowRoot();
+        return element;
+    }
+
+    //Launch the application
     @Given("^launch the application with \"([^\"]*)\"$")
     public void launchTheApplicationWith(String url) {
         fabricPage.get(url);
@@ -56,27 +56,27 @@ public class AddingToCart {
 
         //WebElement shadowPanelRoot = fabricPage.shadowRootElement(fabricPage.findElement(fabricPage.cmtmRoot),fabricPage.configuration);
         //fabricPage.waitForChildLoader(shadowPanelRoot);
-        if(fabricPage.waitForElementVisibility(fabricPage.closeButtonParent)){
+        if (fabricPage.waitForElementVisibility(fabricPage.closeButtonParent)) {
             fabricPage.findElement(fabricPage.closeButtonParent).click();
         }
-        WebElement shadowFooterRoot = fabricPage.shadowRootElement(fabricPage.findElement(fabricPage.cmtmRoot),fabricPage.panelFooter);
-        WebElement nextButton = fabricPage.shadowRootElement(shadowFooterRoot,fabricPage.nextButton);
+        WebElement shadowFooterRoot = fabricPage.shadowRootElement(fabricPage.findElement(fabricPage.cmtmRoot), fabricPage.panelFooter);
+        WebElement nextButton = fabricPage.shadowRootElement(shadowFooterRoot, fabricPage.nextButton);
         nextButton.click();
 
     }
 
-   //Function to choose style
+    //Function to choose style
     @And("^select the style$")
     public void selectTheStyle() throws InterruptedException {
 
-        WebElement titleRoot = fabricPage.shadowRootElement(fabricPage.findElement(fabricPage.cmtmRoot),fabricPage.panelSection);
+        WebElement titleRoot = fabricPage.shadowRootElement(fabricPage.findElement(fabricPage.cmtmRoot), fabricPage.panelSection);
         fabricPage.waitForChildLoader(titleRoot);
-        WebElement shadowFooterRoot = fabricPage.shadowRootElement(fabricPage.findElement(fabricPage.cmtmRoot),fabricPage.panelFooter);
-        WebElement nextButton = fabricPage.shadowRootElement(shadowFooterRoot,fabricPage.nextButton);
-        if(fabricPage.isChildElementFound(titleRoot,fabricPage.jacketSection)) {
+        WebElement shadowFooterRoot = fabricPage.shadowRootElement(fabricPage.findElement(fabricPage.cmtmRoot), fabricPage.panelFooter);
+        WebElement nextButton = fabricPage.shadowRootElement(shadowFooterRoot, fabricPage.nextButton);
+        if (fabricPage.isChildElementFound(titleRoot, fabricPage.jacketSection)) {
             WebElement title = fabricPage.shadowRootElement(titleRoot.findElement(fabricPage.sideTitle), fabricPage.title);
             if (title.getText().equals("Your style")) {
-               nextButton.click();
+                nextButton.click();
             } else {
                 System.out.println("failed");
             }
@@ -86,50 +86,78 @@ public class AddingToCart {
 
     //Function to choose the desired size
     @And("^choose the size$")
-    public void chooseTheSize() {
+    public void chooseTheSize() throws InterruptedException {
 
         //Waiting for Page load
-        WebElement titleRoot = fabricPage.shadowRootElement(fabricPage.findElement(fabricPage.cmtmRoot),fabricPage.panelSection);
+        WebElement titleRoot = fabricPage.shadowRootElement(fabricPage.findElement(fabricPage.cmtmRoot), fabricPage.panelSection);
         fabricPage.waitForChildLoader(titleRoot);
 
         WebElement sizeSection = fabricPage.shadowRootElement(fabricPage.findElement(fabricPage.cmtmRoot), (By.ByCssSelector) fabricPage.guardShadow);
-        WebElement sideViewerRoot = fabricPage.shadowRootElement(sizeSection.findElement(fabricPage.entryPageShadow),fabricPage.sideViewer);
+        WebElement sideViewerRoot = fabricPage.shadowRootElement(sizeSection.findElement(fabricPage.entryPageShadow), fabricPage.sideViewer);
         fabricPage.waitForElementVisibility(sideViewerRoot.findElement(fabricPage.getStarted));
         sideViewerRoot.findElement(fabricPage.getStarted).click();
 
-        //Click on Select Size Dropdown Button
-        WebElement spEditor = fabricPage.shadowRootElement(fabricPage.findElement(fabricPage.cmtmRoot), (By.ByCssSelector) fabricPage.spEditor);
-        WebElement selectSizeDropButtonRoot = fabricPage.shadowRootElement(spEditor,fabricPage.sideViewer);
-        WebElement selectSizeDropButton = selectSizeDropButtonRoot.findElement(fabricPage.selectSizeDropdown);
-        selectSizeDropButton.click();
+        //Check for page load
+        WebElement nextContext = fabricPage.shadowRootElement(fabricPage.findElement(fabricPage.cmtmRoot), fabricPage.sideViewer);
+        if (fabricPage.waitForAttributeToBe(nextContext, "class", "active-next")) {
+            //Click on Select Size Dropdown Button
+            WebElement spEditor = fabricPage.shadowRootElement(fabricPage.findElement(fabricPage.cmtmRoot), fabricPage.spEditor);
+            WebElement ssSideViewer = fabricPage.shadowRootElement(spEditor, fabricPage.sideViewer);
+            if (fabricPage.isChildElementFound(ssSideViewer, fabricPage.dropDownButtonParent)) {
+                WebElement ssButton = ssSideViewer.findElement(fabricPage.dropDownButtonParent);
+                fabricPage.waitForElementVisibility(ssButton);
+                ssButton.click();
+            }
 
-        //Select the desired size from the list
-       WebElement sizePickerParentRoot = fabricPage.shadowRootElement(spEditor,fabricPage.sizeSelectorRoot);
-       WebElement sizePicker = fabricPage.shadowRootElement(sizePickerParentRoot, fabricPage.selectedSize);
-       if(fabricPage.waitForElementVisibility(sizePicker)){
-           sizePicker.click();
-       }
+            //Select the desired size from the list
+            WebElement spSizePicker = fabricPage.shadowRootElement(spEditor, fabricPage.spSizePicker);
+            if (fabricPage.isChildElementFound(spSizePicker, fabricPage.sizeSelectorRoot)) {
+                WebElement sizePickerParentRoot = fabricPage.shadowRootElement(spEditor, fabricPage.sizeSelectorRoot);
+                WebElement sizePicker = fabricPage.shadowRootElement(sizePickerParentRoot, fabricPage.selectedSize);
+                if (fabricPage.waitForElementVisibility(sizePicker)) {
+                    sizePicker.click();
+                }
+            }
 
-       //Click on Select Size button
-       WebElement selectSizeRoot = fabricPage.shadowRootElement(spEditor,fabricPage.panelFooter);
-       WebElement selectSizeButton = fabricPage.shadowRootElement(selectSizeRoot,fabricPage.selectSizeButton);
-       selectSizeButton.click();
+            WebElement panelFooter = spSizePicker.findElement(fabricPage.panelFooter);
+            WebElement selectSizeButton = fabricPage.shadowRootElement(panelFooter, fabricPage.selectSizeButton);
+            fabricPage.waitForElementToBeEnabled(selectSizeButton);
+            selectSizeButton.click();
+        }
+        WebElement spEditor = fabricPage.shadowRootElement(fabricPage.findElement(fabricPage.cmtmRoot), fabricPage.spEditor);
+        nextContext = fabricPage.shadowRootElement(spEditor, fabricPage.sideViewer);
+        if (fabricPage.waitForAttributeToBe(nextContext, "class", "active-main")) {
+            WebElement panelFooter = fabricPage.shadowRootElement(spEditor, fabricPage.panelFooter);
+            if (fabricPage.waitForElementVisibility(panelFooter)) {
+                WebElement ssButtonSaveAndContinue = fabricPage.shadowRootElement(panelFooter, fabricPage.ssButtonSaveAndContinue);
+                fabricPage.waitForElementToBeClickable(ssButtonSaveAndContinue);
+                Thread.sleep(2000);
+                ssButtonSaveAndContinue.click();
+                Thread.sleep(2000);
+            }
+        }
+        spEditor = fabricPage.shadowRootElement(fabricPage.findElement(fabricPage.cmtmRoot), fabricPage.spEditor);
+        WebElement spProfileName = fabricPage.shadowRootElement(spEditor, fabricPage.spProfileName);
+        WebElement panelFooter = spProfileName.findElement(fabricPage.panelFooter);
+        WebElement getMainDiv = fabricPage.shadowRootElement(panelFooter, fabricPage.divFooterMain);
+        if (fabricPage.isChildElementFound(getMainDiv,fabricPage.applyButton)) {
+            getMainDiv.findElement(fabricPage.applyButton);
+            Thread.sleep(2000);
+            getMainDiv.click();
+        }
 
-
-       //Click on Save & Continue button
-       System.out.println("Done");
-
-
-
-
-
-        //Enter Name and save Profile
-        selectSizeDropButtonRoot.findElement(fabricPage.saveProfileInput).sendKeys("test");
-        //WebElement applyButton = fabricPage.shadowRootElement(selectSizeRoot,fabricPage.applyButton);
 
         System.out.println("Done");
 
 
+        //Click on Save & Continue button
+
+
+//        //Enter Name and save Profile
+//        ssSideViewer.findElement(fabricPage.saveProfileInput).sendKeys("test");
+//        //WebElement applyButton = fabricPage.shadowRootElement(selectSizeRoot,fabricPage.applyButton);
+//
+//        System.out.println("Done");
 
 
     }
@@ -138,8 +166,8 @@ public class AddingToCart {
     @And("^add to cart$")
     public void addToCart() {
 
-        WebElement shadowFooterRoot = fabricPage.shadowRootElement(fabricPage.findElement(fabricPage.cmtmRoot),fabricPage.panelFooter);
-        WebElement addButton = fabricPage.shadowRootElement(shadowFooterRoot,fabricPage.addButton);
+        WebElement shadowFooterRoot = fabricPage.shadowRootElement(fabricPage.findElement(fabricPage.cmtmRoot), fabricPage.panelFooter);
+        WebElement addButton = fabricPage.shadowRootElement(shadowFooterRoot, fabricPage.addButton);
         addButton.click();
         fabricPage.waitForUrlContains("/cart");
         fabricPage.waitForPageToLoad("Cart");

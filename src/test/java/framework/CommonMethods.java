@@ -14,6 +14,7 @@ import java.util.regex.Pattern;
 
 import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -30,7 +31,7 @@ import logger.Log;
 public class CommonMethods extends Assertions {
 
     WebDriver driver = null;
-    public final Duration timeOut = Duration.ofSeconds(45);
+    public final Duration timeOut = Duration.ofSeconds(15);
     Properties configProp = new Properties();
     protected FileInputStream configFis;
     protected File file = new File("");
@@ -233,6 +234,20 @@ public class CommonMethods extends Assertions {
         }
     }
 
+    public boolean waitForElementToBeClickable(WebElement targetElement) {
+        try {
+            WebDriverWait wait = new WebDriverWait(driver, timeOut);
+            wait.until(ExpectedConditions.elementToBeClickable(targetElement));
+            return true;
+        } catch (TimeoutException e) {
+            System.out.println("Element is not clickable: " + targetElement);
+            System.out.println();
+            System.out.println(e.getMessage());
+            throw new TimeoutException();
+
+        }
+    }
+
 
     /**
      * method to wait for an element until it is invisible
@@ -395,9 +410,34 @@ public class CommonMethods extends Assertions {
     }
 
     public WebElement shadowRootElement(WebElement rootElement, By.ByCssSelector cssSelector) {
-        SearchContext ele = rootElement.getShadowRoot();
-        WebElement shadowElement = ele.findElement(cssSelector);
-        return shadowElement;
+        try {
+            SearchContext ele = rootElement.getShadowRoot();
+            WebElement shadowElement = ele.findElement(cssSelector);
+            WebDriverWait wait = new WebDriverWait(driver,timeOut);
+            wait.until(ExpectedConditions.visibilityOf(shadowElement));
+            return shadowElement;
+        }catch (NoSuchElementException noElement){
+            throw noElement;
+        }
+    }
+
+    public boolean waitForAttributeToBe(WebElement element, String attribute,String value)  {
+        try{
+            WebDriverWait wait = new WebDriverWait(driver,timeOut);
+            wait.until(ExpectedConditions.attributeContains(element,attribute,value));
+            return true;
+        }catch (TimeoutException exception){
+            throw exception;
+        }
+    }
+
+    public void waitForElementToBeEnabled(final WebElement element) {
+        try {
+            WebDriverWait wait = new WebDriverWait(driver,timeOut);
+            wait.until((ExpectedCondition<Boolean>) driver -> element.isEnabled());
+        } catch (Exception e) {
+            throw e;
+        }
     }
 
     public boolean isChildElementFound(WebElement element, By childSelector) throws InterruptedException {
