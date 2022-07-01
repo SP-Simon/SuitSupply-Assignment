@@ -5,7 +5,7 @@ Behavioural driven development automation framework using selenium, cucumber-jav
 
 ## Tools and technologies used:
 
-1. Language: Java 15
+1. Language: Java 15.0.1
 2. Testing framework: TestRunner
 3. BDD framework: Cucumber jvm
 4. Automation tool: Selenium webdriver
