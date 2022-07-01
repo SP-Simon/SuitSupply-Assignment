@@ -11,4 +11,4 @@ Feature: adding to cart
     And select fabric
     And select the style
     And choose the size
-    And add to cart
+    Then add to cart

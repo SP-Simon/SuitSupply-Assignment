@@ -23,7 +23,6 @@ import java.util.GregorianCalendar;
  * This class contains wedriver creation and quitting methods. These are required while
  * running each and every scenario. Methods are defined under @Before and @After hooks
  * to get initialized at start and end of the test.
- * @author shanky
  *
  */
 public class CreateSession {

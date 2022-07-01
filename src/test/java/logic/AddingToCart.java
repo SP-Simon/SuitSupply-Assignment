@@ -115,6 +115,7 @@ public class AddingToCart {
                 WebElement sizePickerParentRoot = fabricPage.shadowRootElement(spEditor, fabricPage.sizeSelectorRoot);
                 WebElement sizePicker = fabricPage.shadowRootElement(sizePickerParentRoot, fabricPage.selectedSize);
                 if (fabricPage.waitForElementVisibility(sizePicker)) {
+                    Thread.sleep(2000);
                     sizePicker.click();
                 }
             }
@@ -145,29 +146,26 @@ public class AddingToCart {
             Thread.sleep(2000);
             getMainDiv.click();
         }
-
-
-        System.out.println("Done");
-
-
-        //Click on Save & Continue button
-
-
-//        //Enter Name and save Profile
-//        ssSideViewer.findElement(fabricPage.saveProfileInput).sendKeys("test");
-//        //WebElement applyButton = fabricPage.shadowRootElement(selectSizeRoot,fabricPage.applyButton);
-//
-//        System.out.println("Done");
-
-
     }
 
-    //Function to cart
+    //Function for adding to cart
     @And("^add to cart$")
     public void addToCart() {
 
+        WebElement titleRoot = fabricPage.shadowRootElement(fabricPage.findElement(fabricPage.cmtmRoot), fabricPage.panelSection);
+        fabricPage.waitForChildLoader(titleRoot);
         WebElement shadowFooterRoot = fabricPage.shadowRootElement(fabricPage.findElement(fabricPage.cmtmRoot), fabricPage.panelFooter);
         WebElement addButton = fabricPage.shadowRootElement(shadowFooterRoot, fabricPage.addButton);
+
+        /*if (fabricPage.isChildElementFound(titleRoot,fabricPage.summarySection)) {
+            WebElement title = fabricPage.shadowRootElement(titleRoot.findElement(fabricPage.sideTitle), fabricPage.title);
+            if (title.getText().equals("Your summary")) {
+                addButton.click();
+            } else {
+                System.out.println("failed");
+            }
+        }*/
+
         addButton.click();
         fabricPage.waitForUrlContains("/cart");
         fabricPage.waitForPageToLoad("Cart");

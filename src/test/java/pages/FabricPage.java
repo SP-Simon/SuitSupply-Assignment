@@ -67,6 +67,7 @@ public class FabricPage extends CommonMethods {
     public By.ByCssSelector addButton = (By.ByCssSelector) By.cssSelector("ss-button[title='Add']");// Add button
 
     //Cart Page
+    public By summarySection = By.cssSelector("cmtm-section[data-id='SummarySection']");
     public By checkoutButton = By.xpath("//a[contains(text(),'Checkout')]");//checkout button
     public By productDetails = By.xpath("//div[@class='product-card__details']");
     public By removeFromCartButton = By.xpath("//div[@class='product-card__header']//button[@type='button']");

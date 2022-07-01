@@ -26,7 +26,6 @@ import logger.Log;
  * to perform actions on webelement. It is a repository so
  * that same code need not to be written again.
  *
- * @author shanky
  */
 public class CommonMethods extends Assertions {
 
@@ -202,17 +201,7 @@ public class CommonMethods extends Assertions {
             return false;
         }
     }
-/*
-    public boolean waitForElementToBeClickable(WebElement targetElement) {
-        try {
-            WebDriverWait wait = new WebDriverWait(driver, timeOut);
-            wait.until(ExpectedConditions.elementToBeClickable(targetElement);
-            return true;
-        } catch (TimeoutException e) {
-            return false;
-        }
-    }
-    */
+
 
     /**
      * method to wait for an element to be clickable
