@@ -51,10 +51,25 @@ public class FabricPage extends CommonMethods {
     public By.ByCssSelector headerSelectSize = (By.ByCssSelector) By.cssSelector("h2");
     public By.ByCssSelector selectSizeDropdown = (By.ByCssSelector) By.cssSelector("ss-button[title='Select size']");//drop down for select size
     public By.ByCssSelector saveAndContinue = (By.ByCssSelector) By.cssSelector("ss-button[title='Save & Continue']");//Bottom Save & Continue button
-    public By.ByCssSelector editorShadow = (By.ByCssSelector) By.cssSelector("sp-editor");//second shadowroot in size page
+    public By.ByCssSelector spEditor = (By.ByCssSelector) By.cssSelector("sp-editor");//second shadowroot in size page
+
+    //Size picker page
     public By.ByCssSelector sizeSelectorRoot = (By.ByCssSelector) By.cssSelector("ss-size-selector");//root element for size selector shadow
-    public By.ByCssSelector selectedSize = (By.ByCssSelector) By.cssSelector("ss-button[title='42']");
-    public By.ByCssSelector selectSize = (By.ByCssSelector) By.cssSelector("ss-button[title='Select size']"); // Bottom Select Size button
+    public By.ByCssSelector selectedSize = (By.ByCssSelector) By.cssSelector("ss-button[title='42']");//desired size button/tile
+    //public By.ByCssSelector lastSizeRoot = (By.ByCssSelector) By.cssSelector("ss-button:last-of-type");
+    public By.ByCssSelector selectSizeButton = (By.ByCssSelector) By.cssSelector("ss-button[type='submit']"); // Bottom Select Size button
+
+    //Save Profile Page
+    public By.ByCssSelector saveProfileInputRoot = (By.ByCssSelector) By.cssSelector("ss-input-wrap");//root element for profile input shadow
+    public By.ByCssSelector saveProfileInput = (By.ByCssSelector) By.cssSelector("input");
+    public By.ByCssSelector applyButton = (By.ByCssSelector) By.cssSelector("ss-button[title='Apply']"); // Bottom Select Size button
+    public By.ByCssSelector addButton = (By.ByCssSelector) By.cssSelector("ss-button[title='Add']");// Add button
+
+    //Cart Page
+    public By checkoutButton = By.xpath("//a[contains(text(),'Checkout')]");//checkout button
+    public By productDetails = By.xpath("//div[@class='product-card__details']");
+    public By removeFromCartButton = By.xpath("//div[@class='product-card__header']//button[@type='button']");
+
 
 
 

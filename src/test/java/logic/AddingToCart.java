@@ -28,12 +28,14 @@ public class AddingToCart {
         return  element;
     }
 
+   //Launch the application
     @Given("^launch the application with \"([^\"]*)\"$")
     public void launchTheApplicationWith(String url) {
         fabricPage.get(url);
     }
 
 
+    //Function to Navigate to Custom made Jacket Screen
     @Then("^click on menu$")
     public void clickOnMenu() throws InterruptedException {
         fabricPage.waitForPageToLoad("Home Page");
@@ -46,37 +48,14 @@ public class AddingToCart {
         fabricPage.findElement(fabricPage.jacketLink).click();
         fabricPage.waitForUrlContains("/custommade?");
         fabricPage.waitForPageToLoad("Home Page3");
-        /*if(fabricPage.waitForElementVisibility(fabricPage.closeButtonParent)){
-            fabricPage.findElement(fabricPage.closeButtonParent).click();
-        }
-        WebElement shadowFooterRoot = fabricPage.shadowRootElement(fabricPage.findElement(fabricPage.cmtmRoot),fabricPage.panelFooter);
-        WebElement nextButton = fabricPage.shadowRootElement(shadowFooterRoot,fabricPage.nextButton);
-        nextButton.click();*/
-        //fabricPage.waitForPageToLoad("Home Page 4");
-        /*WebElement titleRoot = fabricPage.shadowRootElement(fabricPage.findElement(fabricPage.cmtmRoot),fabricPage.panelSection);
-        if(fabricPage.isChildElementFound(titleRoot,fabricPage.jacketSection)){
-            WebElement title = fabricPage.shadowRootElement(titleRoot.findElement(fabricPage.sideTitle),fabricPage.title);
-            if(title.getText().equals("Your style")){
-                nextButton.click();
-            }
-            else{
-                System.out.println("failed");
-            }
-        }*/
-        //System.out.println("Done");
-
-//        shadowRoot = initializeShadowRoot();
-//        WebElement getPanel = shadowRoot.findElement(By.cssSelector("div.panel"));
-//        WebElement getFooter = getPanel.findElement(By.tagName("ss-side-sticky"));
-//        System.out.println("Done");
 
     }
 
     @And("^select fabric$")
     public void selectFabric() throws InterruptedException {
 
-        WebElement shadowPanelRoot = fabricPage.shadowRootElement(fabricPage.findElement(fabricPage.cmtmRoot),fabricPage.configuration);
-        fabricPage.waitForChildLoader(shadowPanelRoot);
+        //WebElement shadowPanelRoot = fabricPage.shadowRootElement(fabricPage.findElement(fabricPage.cmtmRoot),fabricPage.configuration);
+        //fabricPage.waitForChildLoader(shadowPanelRoot);
         if(fabricPage.waitForElementVisibility(fabricPage.closeButtonParent)){
             fabricPage.findElement(fabricPage.closeButtonParent).click();
         }
@@ -86,6 +65,7 @@ public class AddingToCart {
 
     }
 
+   //Function to choose style
     @And("^select the style$")
     public void selectTheStyle() throws InterruptedException {
 
@@ -104,24 +84,65 @@ public class AddingToCart {
 
     }
 
+    //Function to choose the desired size
     @And("^choose the size$")
     public void chooseTheSize() {
 
+        //Waiting for Page load
         WebElement titleRoot = fabricPage.shadowRootElement(fabricPage.findElement(fabricPage.cmtmRoot),fabricPage.panelSection);
         fabricPage.waitForChildLoader(titleRoot);
+
         WebElement sizeSection = fabricPage.shadowRootElement(fabricPage.findElement(fabricPage.cmtmRoot), (By.ByCssSelector) fabricPage.guardShadow);
         WebElement sideViewerRoot = fabricPage.shadowRootElement(sizeSection.findElement(fabricPage.entryPageShadow),fabricPage.sideViewer);
         fabricPage.waitForElementVisibility(sideViewerRoot.findElement(fabricPage.getStarted));
         sideViewerRoot.findElement(fabricPage.getStarted).click();
-        //WebElement getStartedButton = fabricPage.shadowRootElement(sideViewerRoot.findElement(fabricPage.getStarted))
-        //sideViewerRoot.click();
 
-        sideViewerRoot.findElement(fabricPage.selectSizeDropdown).click();
+        //Click on Select Size Dropdown Button
+        WebElement spEditor = fabricPage.shadowRootElement(fabricPage.findElement(fabricPage.cmtmRoot), (By.ByCssSelector) fabricPage.spEditor);
+        WebElement selectSizeDropButtonRoot = fabricPage.shadowRootElement(spEditor,fabricPage.sideViewer);
+        WebElement selectSizeDropButton = selectSizeDropButtonRoot.findElement(fabricPage.selectSizeDropdown);
+        selectSizeDropButton.click();
 
-        WebElement sizeEditorRoot = fabricPage.shadowRootElement(fabricPage.findElement(fabricPage.cmtmRoot), (By.ByCssSelector) fabricPage.editorShadow);
-        WebElement sizePicker = fabricPage.shadowRootElement(sizeEditorRoot.findElement(fabricPage.sizeSelectorRoot), (By.ByCssSelector) fabricPage.selectedSize);
-        sizePicker.click();
+        //Select the desired size from the list
+       WebElement sizePickerParentRoot = fabricPage.shadowRootElement(spEditor,fabricPage.sizeSelectorRoot);
+       WebElement sizePicker = fabricPage.shadowRootElement(sizePickerParentRoot, fabricPage.selectedSize);
+       if(fabricPage.waitForElementVisibility(sizePicker)){
+           sizePicker.click();
+       }
+
+       //Click on Select Size button
+       WebElement selectSizeRoot = fabricPage.shadowRootElement(spEditor,fabricPage.panelFooter);
+       WebElement selectSizeButton = fabricPage.shadowRootElement(selectSizeRoot,fabricPage.selectSizeButton);
+       selectSizeButton.click();
+
+
+       //Click on Save & Continue button
+       System.out.println("Done");
+
+
+
+
+
+        //Enter Name and save Profile
+        selectSizeDropButtonRoot.findElement(fabricPage.saveProfileInput).sendKeys("test");
+        //WebElement applyButton = fabricPage.shadowRootElement(selectSizeRoot,fabricPage.applyButton);
+
         System.out.println("Done");
 
+
+
+
+    }
+
+    //Function to cart
+    @And("^add to cart$")
+    public void addToCart() {
+
+        WebElement shadowFooterRoot = fabricPage.shadowRootElement(fabricPage.findElement(fabricPage.cmtmRoot),fabricPage.panelFooter);
+        WebElement addButton = fabricPage.shadowRootElement(shadowFooterRoot,fabricPage.addButton);
+        addButton.click();
+        fabricPage.waitForUrlContains("/cart");
+        fabricPage.waitForPageToLoad("Cart");
+        System.out.println("Done");
     }
 }
