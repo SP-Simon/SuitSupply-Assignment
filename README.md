@@ -8,17 +8,15 @@ Behavioural driven development automation framework using selenium, cucumber-jav
 1. Language: Java 15.0.1 
 2. BDD framework: Cucumber jvm
 3. Automation tool: Selenium webdriver
-4. Build tool: maven
-5. Logging: log4j
-6. Headless browser: Phantomjs
-7. Reporting: [cucumber reporting](https://github.com/damianszczepanik/cucumber-reporting)
+4. Selenium Version : 4.3.0
+5. Build tool: maven
 
 
 ## Features of the framework
 1. BDD framework using Cucumber-jvm. Feature files can be written easily using Given,When, Then etc.
 2. Browser(chrome/firefox) can be configured at run time  from command line (or Continuous integration tool, if configured).
 3. Tests can run in headless browser (Phantomjs) by passing a parameter at run time.
-4. Html report gets generated after each test run and can be found /target/cucumber-html-report/index.html
+4. Html report gets generated after each test run and can be found /test-output/Html/ExtentHtml.html
 
 
 **package: libs** : It has exe of chromedriver and phantomjs. This is required while creating the webdriver session.
