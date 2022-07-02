@@ -38,6 +38,7 @@ public class AddingToCart {
     //Function to Navigate to Custom made Jacket Screen
     @Then("^click on menu$")
     public void clickOnMenu() throws InterruptedException {
+
         fabricPage.waitForPageToLoad("Home Page");
         fabricPage.findElement(fabricPage.menuButton).click();
         fabricPage.waitForPageToLoad("Home Page1");
@@ -81,7 +82,6 @@ public class AddingToCart {
                 System.out.println("failed");
             }
         }
-
     }
 
     //Function to choose the desired size

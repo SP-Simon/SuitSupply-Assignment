@@ -6,13 +6,12 @@ Behavioural driven development automation framework using selenium, cucumber-jav
 ## Tools and technologies used:
 
 1. Language: Java 15.0.1 
-2. Testing framework: TestRunner
-3. BDD framework: Cucumber jvm
-4. Automation tool: Selenium webdriver
-5. Build tool: maven
-6. Logging: log4j
-7. Headless browser: Phantomjs
-8. Reporting: [cucumber reporting](https://github.com/damianszczepanik/cucumber-reporting)
+2. BDD framework: Cucumber jvm
+3. Automation tool: Selenium webdriver
+4. Build tool: maven
+5. Logging: log4j
+6. Headless browser: Phantomjs
+7. Reporting: [cucumber reporting](https://github.com/damianszczepanik/cucumber-reporting)
 
 
 ## Features of the framework

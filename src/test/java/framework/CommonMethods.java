@@ -178,10 +178,14 @@ public class CommonMethods extends Assertions {
             System.out.println();
             System.out.println(e.getMessage());
             throw new TimeoutException();
-
         }
     }
 
+    /**
+     * method to check and wait for the target element to be loaded
+     *used to close the pup up in the fabric page
+     *
+     */
     public boolean waitForElementVisibility(By targetElement) {
         try {
             WebDriverWait wait = new WebDriverWait(driver, timeOut);
@@ -192,6 +196,11 @@ public class CommonMethods extends Assertions {
         }
     }
 
+    /**
+     * method to wait for the  element to be loaded
+     *
+     *
+     */
     public boolean waitForElementVisibility(WebElement targetElement) {
         try {
             WebDriverWait wait = new WebDriverWait(driver, timeOut);
@@ -223,6 +232,11 @@ public class CommonMethods extends Assertions {
         }
     }
 
+    /**
+     * method to wait for the target element to be enabled for clicking
+     *
+     *
+     */
     public boolean waitForElementToBeClickable(WebElement targetElement) {
         try {
             WebDriverWait wait = new WebDriverWait(driver, timeOut);
@@ -398,6 +412,12 @@ public class CommonMethods extends Assertions {
         selectFromDropdown.selectByIndex(valueToBeSelectedindex);
     }
 
+    /**
+     * method to return the element inside the shadow root
+     *
+     * @param rootElement         Parent element to the Shadow root
+     * @param cssSelector         cssSelector for the element inside Shadow root
+     */
     public WebElement shadowRootElement(WebElement rootElement, By.ByCssSelector cssSelector) {
         try {
             SearchContext ele = rootElement.getShadowRoot();
@@ -410,6 +430,13 @@ public class CommonMethods extends Assertions {
         }
     }
 
+    /**
+     * method to wait for the value to be changed used to handle the loading delay
+     *
+     * @param element          element whose attribute to be waited for
+     * @param attribute         attribute whose value to be waited for
+     * @param value              value
+     */
     public boolean waitForAttributeToBe(WebElement element, String attribute,String value)  {
         try{
             WebDriverWait wait = new WebDriverWait(driver,timeOut);
@@ -420,6 +447,11 @@ public class CommonMethods extends Assertions {
         }
     }
 
+    /**
+     * method to wait for the element to be enabled before acting on the same
+     *
+     * @param element         element to be waited for
+     */
     public void waitForElementToBeEnabled(final WebElement element) {
         try {
             WebDriverWait wait = new WebDriverWait(driver,timeOut);
@@ -429,6 +461,11 @@ public class CommonMethods extends Assertions {
         }
     }
 
+    /**
+     * method to check and wait for the child element to be loaded
+     *
+     *
+     */
     public boolean isChildElementFound(WebElement element, By childSelector) throws InterruptedException {
         int count = 5;
         while (count > 0) {
@@ -442,6 +479,11 @@ public class CommonMethods extends Assertions {
         return false;
     }
 
+    /**
+     * method to check for the child element
+     *
+     *
+     */
     public boolean findChildElement(WebElement element, By childSelector) {
         try {
             WebElement newElement = element.findElement(childSelector);
@@ -451,12 +493,21 @@ public class CommonMethods extends Assertions {
         }
     }
 
-    //Waiting for the URL to upda
+    /**
+     * method to wait for the url to be updated for handling the loading
+     *
+     *
+     */
     public void waitForUrlContains(String partOfUrl) {
         WebDriverWait wait = new WebDriverWait(driver, timeOut);
         wait.until(ExpectedConditions.urlContains(partOfUrl));
     }
 
+    /**
+     * method to handle the loading of sections inside page using the loader image
+     *
+     *
+     */
     public boolean waitForChildLoader(WebElement parentElement) {
         try {
             WebDriverWait wait = new WebDriverWait(driver, timeOut);

@@ -1304,3 +1304,95 @@
 02 Jul 2022 00:05:40  INFO logger - Home Page2 page loaded successfully
 02 Jul 2022 00:05:42  INFO logger - .
 02 Jul 2022 00:05:42  INFO logger - Home Page3 page loaded successfully
+02 Jul 2022 00:32:22  INFO logger - .
+02 Jul 2022 00:32:22  INFO logger - Home Page page loaded successfully
+02 Jul 2022 00:32:23  INFO logger - .
+02 Jul 2022 00:32:23  INFO logger - Home Page1 page loaded successfully
+02 Jul 2022 00:32:23  INFO logger - .
+02 Jul 2022 00:32:23  INFO logger - Home Page2 page loaded successfully
+02 Jul 2022 00:32:25  INFO logger - .
+02 Jul 2022 00:32:25  INFO logger - Home Page3 page loaded successfully
+02 Jul 2022 00:32:43  INFO logger - Scenario failed and screenshot saved in outputFiles folder
+02 Jul 2022 00:32:43  INFO logger - Shutting down driver
+----------------------------------------------
+02 Jul 2022 00:49:32  INFO logger - .
+02 Jul 2022 00:49:32  INFO logger - Home Page page loaded successfully
+02 Jul 2022 00:49:32  INFO logger - .
+02 Jul 2022 00:49:32  INFO logger - Home Page1 page loaded successfully
+02 Jul 2022 00:49:33  INFO logger - .
+02 Jul 2022 00:49:33  INFO logger - Home Page2 page loaded successfully
+02 Jul 2022 00:49:35  INFO logger - .
+02 Jul 2022 00:49:35  INFO logger - Home Page3 page loaded successfully
+02 Jul 2022 00:49:46  INFO logger - Scenario failed and screenshot saved in outputFiles folder
+02 Jul 2022 00:49:46  INFO logger - Shutting down driver
+----------------------------------------------
+02 Jul 2022 00:50:32  INFO logger - .
+02 Jul 2022 00:50:32  INFO logger - Home Page page loaded successfully
+02 Jul 2022 00:50:33  INFO logger - .
+02 Jul 2022 00:50:33  INFO logger - Home Page1 page loaded successfully
+02 Jul 2022 00:50:33  INFO logger - .
+02 Jul 2022 00:50:33  INFO logger - Home Page2 page loaded successfully
+02 Jul 2022 00:50:35  INFO logger - .
+02 Jul 2022 00:50:35  INFO logger - Home Page3 page loaded successfully
+02 Jul 2022 00:50:58  INFO logger - .
+02 Jul 2022 00:50:58  INFO logger - Cart page loaded successfully
+02 Jul 2022 00:51:29  INFO logger - Shutting down driver
+----------------------------------------------
+02 Jul 2022 01:00:45  INFO logger - .
+02 Jul 2022 01:00:45  INFO logger - Home Page page loaded successfully
+02 Jul 2022 01:00:45  INFO logger - .
+02 Jul 2022 01:00:45  INFO logger - Home Page1 page loaded successfully
+02 Jul 2022 01:00:45  INFO logger - .
+02 Jul 2022 01:00:45  INFO logger - Home Page2 page loaded successfully
+02 Jul 2022 01:00:46  INFO logger - .
+02 Jul 2022 01:00:46  INFO logger - Home Page3 page loaded successfully
+02 Jul 2022 01:00:56  INFO logger - Scenario failed and screenshot saved in outputFiles folder
+02 Jul 2022 01:00:56  INFO logger - Shutting down driver
+----------------------------------------------
+02 Jul 2022 01:01:24  INFO logger - .
+02 Jul 2022 01:01:24  INFO logger - Home Page page loaded successfully
+02 Jul 2022 01:01:24  INFO logger - .
+02 Jul 2022 01:01:24  INFO logger - Home Page1 page loaded successfully
+02 Jul 2022 01:01:24  INFO logger - .
+02 Jul 2022 01:01:24  INFO logger - Home Page2 page loaded successfully
+02 Jul 2022 01:01:26  INFO logger - .
+02 Jul 2022 01:01:26  INFO logger - Home Page3 page loaded successfully
+02 Jul 2022 01:01:34  INFO logger - Scenario failed and screenshot saved in outputFiles folder
+02 Jul 2022 01:01:34  INFO logger - Shutting down driver
+----------------------------------------------
+02 Jul 2022 01:03:06  INFO logger - .
+02 Jul 2022 01:03:06  INFO logger - Home Page page loaded successfully
+02 Jul 2022 01:03:06  INFO logger - .
+02 Jul 2022 01:03:06  INFO logger - Home Page1 page loaded successfully
+02 Jul 2022 01:03:06  INFO logger - .
+02 Jul 2022 01:03:06  INFO logger - Home Page2 page loaded successfully
+02 Jul 2022 01:03:08  INFO logger - .
+02 Jul 2022 01:03:08  INFO logger - Home Page3 page loaded successfully
+02 Jul 2022 01:03:34  INFO logger - .
+02 Jul 2022 01:03:34  INFO logger - Cart page loaded successfully
+02 Jul 2022 01:03:34  INFO logger - Shutting down driver
+----------------------------------------------
+02 Jul 2022 10:28:07  INFO logger - .
+02 Jul 2022 10:28:07  INFO logger - Home Page page loaded successfully
+02 Jul 2022 10:28:08  INFO logger - .
+02 Jul 2022 10:28:08  INFO logger - Home Page1 page loaded successfully
+02 Jul 2022 10:28:08  INFO logger - .
+02 Jul 2022 10:28:08  INFO logger - Home Page2 page loaded successfully
+02 Jul 2022 10:28:10  INFO logger - .
+02 Jul 2022 10:28:10  INFO logger - Home Page3 page loaded successfully
+02 Jul 2022 10:28:47  INFO logger - .
+02 Jul 2022 10:28:47  INFO logger - Cart page loaded successfully
+02 Jul 2022 10:28:47  INFO logger - Shutting down driver
+----------------------------------------------
+02 Jul 2022 11:33:26  INFO logger - .
+02 Jul 2022 11:33:26  INFO logger - Home Page page loaded successfully
+02 Jul 2022 11:33:26  INFO logger - .
+02 Jul 2022 11:33:26  INFO logger - Home Page1 page loaded successfully
+02 Jul 2022 11:33:26  INFO logger - .
+02 Jul 2022 11:33:26  INFO logger - Home Page2 page loaded successfully
+02 Jul 2022 11:33:28  INFO logger - .
+02 Jul 2022 11:33:28  INFO logger - Home Page3 page loaded successfully
+02 Jul 2022 11:33:56  INFO logger - .
+02 Jul 2022 11:33:56  INFO logger - Cart page loaded successfully
+02 Jul 2022 11:33:56  INFO logger - Shutting down driver
+----------------------------------------------
